@@ -3,5 +3,5 @@ public enum CampusRank {
     DEAN,
     MANAGER,
     PROFESSOR,
-    STUDENT
+    STUDENT;
 }

@@ -1,13 +1,15 @@
-import java.time.OffsetDateTime;
-
 public class Reservation {
     Room room;
-    Reservee reservee;
-    OffsetDateTime time;
+    private String name;
+    CampusRank rank;
 
-    public Reservation(Room room, Reservee reservee) {
+    public Reservation(Room room, String name, CampusRank rank) {
         this.room = room;
-        this.reservee = reservee;
-        time = OffsetDateTime.now();
+        this.name = name;
+        this.rank = rank;
+    }
+
+    public String toString() {
+        return String.format("This is a reservation for %s by %s, who is rank %s", room, name, rank);
     }
 }
